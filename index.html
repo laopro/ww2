@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Segunda Guerra Mundial</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="daltonismo-layer" class="daltonismo-overlay" aria-hidden="true"></div>
+
+<header aria-labelledby="titulo">
+  <img src="images/WW2.jpg" alt="Imagen representativa de la Segunda Guerra Mundial"
+       style="width:100%; height:auto; display:block; margin-bottom:1em;" 
+       aria-hidden="true">
+  <h1 id="titulo">Segunda Guerra Mundial</h1>
+  <p>Conflicto global de 1939 a 1945</p>
+</header>
+
+<nav>
+  <label for="langSelect"><strong>Selecciona idioma:</strong></label>
+  <select id="langSelect" onchange="switchLang(this.value)" aria-label="Seleccionar idioma">
+    <option value="es">🇪🇸 Español</option>
+    <option value="en">🇬🇧 English</option>
+    <option value="fr">🇫🇷 Français</option>
+    <option value="de">🇩🇪 Deutsch</option>
+    <option value="it">🇮🇹 Italiano</option>
+    <option value="pt">🇵🇹 Português</option>
+  </select>
+</nav>
+
+<div class="options">
+  <button onclick="toggleMode()">Modo Oscuro</button>
+  <button onclick="toggleColorblind()">Daltonismo</button>
+</div>
+
+<main aria-label="Contenido principal">
+  <div id="es" class="lang visible" lang="es">
+  <section><h2>Resumen general</h2>
+    <p>La Segunda Guerra Mundial fue un conflicto militar global que se extendió entre 1939 y 1945. Involucró a más de 100 millones de personas de más de 30 países, divididos en dos alianzas principales: los Aliados y las Potencias del Eje. La guerra comenzó con la invasión de Polonia por parte de la Alemania nazi, seguida de una rápida expansión del conflicto por Europa. Con el paso del tiempo, se convirtió en un conflicto verdaderamente mundial, involucrando combates en África, Asia, el Pacífico, y el Atlántico. También fue testigo de horribles crímenes contra la humanidad, incluyendo el Holocausto, y terminó con el uso de armas nucleares por primera vez en la historia. La guerra transformó el orden político, económico y social global, sentando las bases del mundo moderno. Su impacto se percibe aún hoy en las relaciones internacionales y los derechos humanos.</p>
+  </section>
+  <section><h2>Consecuencias</h2>
+    <p>Las consecuencias de la Segunda Guerra Mundial fueron profundas y duraderas. Europa quedó devastada, con ciudades reducidas a escombros y millones de personas desplazadas. Se fundaron las Naciones Unidas con el objetivo de evitar futuros conflictos de esa magnitud. Se juzgaron crímenes de guerra en procesos históricos como los Juicios de Núremberg, que sentaron precedentes legales internacionales. La economía mundial se reconfiguró, con Estados Unidos y la Unión Soviética emergiendo como superpotencias rivales. Esto marcó el inicio de la Guerra Fría. Además, surgieron movimientos de descolonización en Asia y África, inspirados por las ideas de autodeterminación. La reconstrucción de Europa se llevó a cabo con el Plan Marshall, y se establecieron tratados para asegurar la paz y la cooperación internacional.</p>
+  </section>
+  <section><h2>Importancia actual</h2>
+    <p>Comprender la Segunda Guerra Mundial es crucial para entender el mundo actual. Los conflictos geopolíticos, las alianzas internacionales y los organismos de cooperación global tienen su origen en ese periodo. Las lecciones aprendidas han influido en el desarrollo de leyes internacionales sobre derechos humanos, genocidio y crímenes de guerra. Además, el conflicto inspiró numerosas obras culturales que han moldeado la memoria colectiva. La educación sobre el Holocausto y la lucha contra el totalitarismo siguen siendo pilares fundamentales para la defensa de la democracia. También es un recordatorio constante del precio de la intolerancia, el racismo y el extremismo. Estudiar este conflicto ayuda a fomentar una cultura de paz y prevención ante futuras crisis globales.</p>
+  </section>
+</div>
+
+<div id="en" class="lang" lang="en">
+  <section><h2>General Overview</h2>
+    <p>World War II was a global military conflict that lasted from 1939 to 1945. It involved over 100 million people from more than 30 countries, divided into two main alliances: the Allies and the Axis Powers. The war began with Nazi Germany's invasion of Poland, followed by a rapid expansion of the conflict across Europe. Over time, it became a truly global conflict, with battles in Africa, Asia, the Pacific, and the Atlantic. It also witnessed horrific crimes against humanity, including the Holocaust, and ended with the first use of nuclear weapons in history. The war reshaped global political, economic, and social orders, laying the foundation for the modern world. Its impact is still felt today in international relations and human rights.</p>
+  </section>
+  <section><h2>Consequences</h2>
+    <p>The consequences of World War II were deep and long-lasting. Europe was devastated, with cities reduced to rubble and millions displaced. The United Nations was founded to prevent future conflicts of such magnitude. War crimes were prosecuted in historic trials like the Nuremberg Trials, setting international legal precedents. The global economy was restructured, with the United States and the Soviet Union emerging as rival superpowers, marking the beginning of the Cold War. Decolonization movements emerged in Asia and Africa, inspired by self-determination. Europe's reconstruction took place with the Marshall Plan, and treaties were established to promote peace and international cooperation.</p>
+  </section>
+  <section><h2>Current Importance</h2>
+    <p>Understanding World War II is essential to comprehend today's world. Geopolitical conflicts, international alliances, and global cooperation organizations have roots in that period. The lessons learned influenced the development of international laws on human rights, genocide, and war crimes. The conflict also inspired numerous cultural works that shaped collective memory. Education about the Holocaust and the fight against totalitarianism remain fundamental to defending democracy. It is also a constant reminder of the price of intolerance, racism, and extremism. Studying this conflict helps foster a culture of peace and prevention of future global crises.</p>
+  </section>
+</div>
+
+<div id="fr" class="lang" lang="fr">
+  <section><h2>Vue d'ensemble</h2>
+    <p>La Seconde Guerre mondiale fut un conflit militaire mondial qui s'est déroulé de 1939 à 1945. Elle a impliqué plus de 100 millions de personnes de plus de 30 pays, répartis en deux alliances principales : les Alliés et les Puissances de l'Axe. La guerre a commencé avec l'invasion de la Pologne par l'Allemagne nazie, suivie d'une expansion rapide à travers l'Europe. Elle s’est transformée en un conflit véritablement mondial avec des combats en Afrique, en Asie, dans le Pacifique et dans l’Atlantique. Elle a également été marquée par des crimes contre l’humanité, notamment l’Holocauste, et s’est achevée avec la première utilisation d’armes nucléaires. Ce conflit a transformé l’ordre politique, économique et social mondial, posant les bases du monde moderne. Son impact se fait encore sentir aujourd’hui.</p>
+  </section>
+  <section><h2>Conséquences</h2>
+    <p>Les conséquences de la Seconde Guerre mondiale furent profondes et durables. L'Europe était dévastée, ses villes en ruines, et des millions de personnes déplacées. Les Nations Unies furent fondées pour éviter de futurs conflits de cette ampleur. Des crimes de guerre furent jugés lors de procès historiques comme ceux de Nuremberg. L’économie mondiale fut restructurée avec les États-Unis et l’URSS en tant que superpuissances rivales, amorçant la Guerre froide. Des mouvements de décolonisation virent le jour en Asie et en Afrique. La reconstruction de l’Europe fut possible grâce au Plan Marshall, et des traités furent établis pour garantir la paix.</p>
+  </section>
+  <section><h2>Importance actuelle</h2>
+    <p>Comprendre la Seconde Guerre mondiale est essentiel pour saisir les enjeux du monde actuel. Les conflits géopolitiques, les alliances internationales et les institutions de coopération mondiale trouvent leurs origines dans cette période. Les leçons tirées ont influencé le droit international, les droits de l’homme, et la prévention du génocide. Ce conflit a inspiré de nombreuses œuvres culturelles qui alimentent la mémoire collective. L’éducation sur l’Holocauste et la lutte contre le totalitarisme restent des piliers de la démocratie. Cela nous rappelle les dangers de l’intolérance, du racisme et de l’extrémisme. Étudier ce conflit aide à promouvoir une culture de paix.</p>
+  </section>
+</div>
+
+<div id="de" class="lang" lang="de">
+  <section><h2>Allgemeiner Überblick</h2>
+    <p>Der Zweite Weltkrieg war ein globaler militärischer Konflikt, der von 1939 bis 1945 andauerte. Über 100 Millionen Menschen aus mehr als 30 Ländern waren beteiligt, aufgeteilt in zwei Hauptallianzen: die Alliierten und die Achsenmächte. Der Krieg begann mit dem Einmarsch des nationalsozialistischen Deutschlands in Polen und breitete sich schnell über Europa aus. Mit der Zeit wurde daraus ein weltweiter Konflikt mit Kämpfen in Afrika, Asien, im Pazifik und im Atlantik. Es kam zu schwerwiegenden Verbrechen gegen die Menschlichkeit, darunter der Holocaust, und der Krieg endete mit dem ersten Einsatz von Atomwaffen. Der Konflikt veränderte die weltpolitische, wirtschaftliche und soziale Ordnung grundlegend und legte den Grundstein für die moderne Welt. Seine Auswirkungen sind noch heute spürbar.</p>
+  </section>
+  <section><h2>Folgen</h2>
+    <p>Die Folgen des Zweiten Weltkriegs waren tiefgreifend und dauerhaft. Europa war zerstört, viele Städte lagen in Trümmern und Millionen Menschen waren auf der Flucht. Die Vereinten Nationen wurden gegründet, um zukünftige Konflikte dieser Größenordnung zu verhindern. Kriegsverbrechen wurden in historischen Prozessen wie den Nürnberger Prozessen verurteilt. Die Weltwirtschaft wurde neu geordnet, wobei die USA und die Sowjetunion als rivalisierende Supermächte hervorgingen – der Beginn des Kalten Krieges. Entkolonialisierungsbewegungen entstanden in Asien und Afrika, inspiriert vom Selbstbestimmungsrecht. Europas Wiederaufbau wurde durch den Marshallplan unterstützt, und neue Verträge zur Friedenssicherung wurden geschlossen.</p>
+  </section>
+  <section><h2>Aktuelle Bedeutung</h2>
+    <p>Das Verständnis des Zweiten Weltkriegs ist entscheidend, um die heutige Welt zu begreifen. Geopolitische Konflikte, internationale Allianzen und Organisationen der globalen Zusammenarbeit haben ihre Wurzeln in dieser Zeit. Die daraus gezogenen Lehren beeinflussten die Entwicklung des Völkerrechts, insbesondere im Bereich Menschenrechte, Genozid und Kriegsverbrechen. Der Krieg inspirierte zahlreiche kulturelle Werke und prägt das kollektive Gedächtnis. Die Aufklärung über den Holocaust und der Kampf gegen Totalitarismus bleiben wichtige Elemente zur Verteidigung der Demokratie. Der Krieg mahnt uns an die Gefahren von Intoleranz, Rassismus und Extremismus. Die Beschäftigung mit diesem Thema fördert eine Kultur des Friedens.</p>
+  </section>
+</div>
+
+<div id="it" class="lang" lang="it">
+  <section><h2>Panoramica generale</h2>
+    <p>La Seconda Guerra Mondiale fu un conflitto militare globale che si svolse tra il 1939 e il 1945. Coinvolse oltre 100 milioni di persone di più di 30 paesi, divisi in due principali alleanze: gli Alleati e le Potenze dell’Asse. La guerra iniziò con l'invasione della Polonia da parte della Germania nazista, seguita da una rapida espansione in Europa. Col tempo divenne un conflitto davvero mondiale, con combattimenti in Africa, Asia, Pacifico e Atlantico. Fu segnata da gravi crimini contro l’umanità, come l’Olocausto, e terminò con l’uso delle armi nucleari per la prima volta. La guerra cambiò l’ordine politico, economico e sociale mondiale, gettando le basi per il mondo moderno. Il suo impatto si percepisce ancora oggi.</p>
+  </section>
+  <section><h2>Conseguenze</h2>
+    <p>Le conseguenze della Seconda Guerra Mondiale furono profonde e durature. L'Europa fu devastata, con città distrutte e milioni di sfollati. L'ONU fu fondata per prevenire futuri conflitti di tale portata. I crimini di guerra furono perseguiti nei famosi processi di Norimberga. L'economia mondiale fu riorganizzata, con Stati Uniti e Unione Sovietica emersi come superpotenze rivali, segnando l’inizio della Guerra Fredda. In Asia e Africa nacquero movimenti di decolonizzazione ispirati all’autodeterminazione. La ricostruzione dell’Europa avvenne grazie al Piano Marshall e furono firmati trattati per promuovere la pace e la cooperazione.</p>
+  </section>
+  <section><h2>Importanza attuale</h2>
+    <p>Capire la Seconda Guerra Mondiale è essenziale per comprendere il mondo di oggi. I conflitti geopolitici, le alleanze internazionali e le organizzazioni di cooperazione globale hanno origine in quel periodo. Le lezioni apprese hanno influenzato lo sviluppo del diritto internazionale in materia di diritti umani, genocidio e crimini di guerra. Il conflitto ha ispirato numerose opere culturali che alimentano la memoria collettiva. L'educazione sull'Olocausto e la lotta contro il totalitarismo sono ancora pilastri fondamentali della democrazia. È un monito contro l’intolleranza, il razzismo e l’estremismo. Studiare questo conflitto aiuta a promuovere una cultura di pace e prevenzione.</p>
+  </section>
+</div>
+
+<div id="pt" class="lang" lang="pt">
+  <section><h2>Visão geral</h2>
+    <p>A Segunda Guerra Mundial foi um conflito militar global que durou de 1939 a 1945. Envolveu mais de 100 milhões de pessoas de mais de 30 países, divididos em duas alianças principais: os Aliados e o Eixo. A guerra começou com a invasão da Polônia pela Alemanha nazista, seguida por uma rápida expansão do conflito pela Europa. Com o tempo, tornou-se uma guerra verdadeiramente mundial, com batalhas na África, Ásia, Pacífico e Atlântico. Também testemunhou crimes terríveis contra a humanidade, como o Holocausto, e terminou com o uso de armas nucleares pela primeira vez. O conflito transformou a ordem política, econômica e social mundial, moldando o mundo moderno. Seu impacto ainda é sentido hoje.</p>
+  </section>
+  <section><h2>Consequências</h2>
+    <p>As consequências da Segunda Guerra Mundial foram profundas e duradouras. A Europa ficou devastada, com cidades em ruínas e milhões de deslocados. A ONU foi criada para evitar futuros conflitos dessa magnitude. Crimes de guerra foram julgados em tribunais históricos como os Julgamentos de Nuremberg. A economia global foi reestruturada, com Estados Unidos e União Soviética emergindo como superpotências rivais, iniciando a Guerra Fria. Surgiram movimentos de descolonização na Ásia e África, inspirados na autodeterminação. A reconstrução da Europa foi financiada pelo Plano Marshall, e tratados foram assinados para promover a paz e a cooperação internacional.</p>
+  </section>
+  <section><h2>Importância atual</h2>
+    <p>Compreender a Segunda Guerra Mundial é essencial para entender o mundo atual. Conflitos geopolíticos, alianças internacionais e organismos de cooperação global têm origem nesse período. As lições aprendidas influenciaram o desenvolvimento de leis internacionais sobre direitos humanos, genocídio e crimes de guerra. O conflito também inspirou diversas obras culturais que formam a memória coletiva. A educação sobre o Holocausto e a luta contra o totalitarismo continuam sendo pilares fundamentais da democracia. É um lembrete constante dos perigos da intolerância, racismo e extremismo. Estudar esse conflito ajuda a promover uma cultura de paz e prevenção de futuras crises globais.</p>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <section id="sellos">
+  <h2 id="tituloSellos">Validación técnica</h2>
+  <p id="jsCheck">Código JS validado con JSHint (compatibilidad ES6 y sin errores)</p>
+  <p id="waiCheck">Esta página sigue principios de accesibilidad de la WAI (Web Accessibility Initiative)</p>
+  <p id="estructuraCheck">Estructura modular y segura • Código limpio y validado • Compatible con navegadores modernos</p>
+
+  <div class="sellos-iconos" style="text-align:center; margin-top:1em;">
+    <a href="https://validator.w3.org/" target="_blank" rel="noopener" aria-label="Validador HTML W3C">
+      <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 válido" width="64" height="64">
+    </a>
+    <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener" aria-label="Validador CSS W3C">
+      <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="CSS válido" style="height:64px;">
+    </a>
+  </div>
+</section>
+
+</footer>
+
+<div id="mensaje-cambio" class="visually-hidden" aria-live="polite"></div>
+
+<script src="functions.js"></script>
+</body>
+</html>
